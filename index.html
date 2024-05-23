@@ -7,15 +7,96 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>InnSect_Creative Makers2024</h1>
-       <img src="https://api.dramco.be/dramco-uno/Innsect/eui-70b3d57ed0067930/luminosity/graph?style=dark&limit=55" width="100%" alt="Graph displaying luminosity"/>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+       
+    <div class="header">
+        <img src="images/logo_transparent.png" height="70px" class="logo" >
+        <a href="sensorsdata.html"><img src="images/log_in.png" height="70px" class="logo2" class="header-img">
+        </a>
+    </div>
+  
+    
+    <div class="main">    
+        <div class="wrapper">
+            <div class="box1" class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="images/carosel1.png" width="100%" height="100%" style="object-fit:cover;" >
+                  </div>
+                  
+                  <div class="mySlides fade">
+                    <img src="images/carosel2.png" width="100%" height="100%" style="object-fit:cover;">
+                  </div>
+                  
+                  <div class="mySlides fade">
+                    <img src="images/carosel3.png" width="100%" height="100%" style="object-fit:cover;">
+                  </div>
+
+                  <div class="mySlides fade">
+                    <img src="images/carosel4.png" width="100%" height="100%" style="object-fit:cover;">
+                  </div>
+
+            </div>
+
+
+
+            <div class="box2"><div class="box2text">Innsect creates and extends the concept of bug hotels to address the challenges of industrialization and habitat loss for insects. In response to the growing density of cities and the decline of green spaces, our approach constitutes an adaptable habitat for diverse insect species in highly urbanized environments. We propose a modular system consisting of interconnected cells, resembling to small bug hotels, which can be assembled to form larger colonies throughout the city. By supporting social aspect and promoting engagement with nature, our design aims to cultivate a sense of community involvement and biodiversity conservation.</div>  </div>
+            
+            <div class="map"> <iframe src="https://www.google.com/maps/d/embed?mid=1Lp8j1yravs1BsIa_nXYtAo2NGHFyFRY&ehbc=2E312F" width="100%" height="100%"></iframe></div>
+            
+            <div class="box3">
+              <div class="call1">
+                  <p>The modular cells system enhances the insect’s
+                    living requirements and promotes social engagement: 
+                     everyone can participate in this open-source project.
+                      To support this initiative we have created a Innsect kit, 
+                      which includes all necessary materials and instructions
+                      needed to start the process of building a bug hotel web in your city.</p>
+              </div>
+              <div class="call2">
+                  <div class="nested1">download the flyer<br> with istructions</div>
+                  <div class="nested1">request a module<br></div>
+                  <div class="nested1">or download the .stl files<br>for 3D printing</div>
+              </div>
+            </div>     
+              
+            
+              <div class="call3">
+                  <p class="textcall3"> Find the best plece for your module! Consult the map and see the concentration of cells 
+                  in various colonies in the city. Attach your personal cell where you think
+                  it may be needed, or simply where it is convenient for you. 
+                  (Remember that only places marked green have sensors capable of giving you
+                   information about the status of your module)</p>
+                   <a href="/immaginiprova.html" onclick="window.open(this.href,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=500,height=500'); return false;" id="adressform">
+                   <div  > share the location of your module!</div>
+                   </a> 
         
-        <script src="" async defer></script>
+              </div>
+            
+            
+        </div>
+    </div>    
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+        
+          slides[slideIndex-1].style.display = "block";  
+          setTimeout(showSlides,4000); // Change image every 2 seconds
+        }
+        </script>
     </body>
 </html>
