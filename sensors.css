@@ -1,0 +1,46 @@
+body{
+    font-family: "Radio Canada Big", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+    font-size: x-small;
+    margin: 10px;
+    padding: 0px;
+    background-image:url(images/bg4.png);
+    background-repeat:repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+img{
+    margin-bottom: 10px;
+    margin-left: 0%;
+
+}
+
+iframe{
+    border: 1px solid black;
+}
+
+.wrap{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap 
+}
+
+.sensors{
+}
+.box1{
+    overflow: hidden;
+    width:40%;
+    height:40%;
+
+}
+
+
+.map{
+    width:40%;
+    margin-right:30px;
+}
+
